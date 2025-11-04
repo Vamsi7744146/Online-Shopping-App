@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Online shopping</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, rgb(190, 222, 73), rgb(18, 17, 17));
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .online-shopping-container {
+            max-width: 800px;
+            background: linear-gradient(180deg, green, rgb(54, 53, 53));
+            padding: 10px;
+            margin: auto;
+            color: white;
+            font-weight: bold;
+
+
+        }
+
+        .product-row {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid white;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px
+        }
+
+        button {
+            background: linear-gradient(45deg, red, white);
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            padding: 15px;
+            font-weight: bold;
+
+        }
+
+        button:hover {
+            background: linear-gradient(45deg, red, black);
+            color: white;
+        }
+
+        #feedback {
+
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: white;
+            padding: 18px;
+            display: none;
+            color: white;
+        }
+
+        #totalprice {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="online-shopping-container">
+        <h1>Online Shopping</h1>
+        <h3 id="feedback"></h3>
+        <h2>Available Products</h2>
+
+        <div id="product-container">
+
+        </div>
+        <h2>My cart</h2>
+        <div id="cart-container">
+
+
+        </div>
+        <h2 id="totalprice">Rs.0</h2>
+        <h2>Actions</h2>
+        <button id="sortbyprice">Sort by Price</button>
+        <button id="clearcart">Clear Cart</button>
+
+    </div>
+
+    <!--___________script__________-->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
